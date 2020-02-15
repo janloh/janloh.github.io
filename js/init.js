@@ -6,9 +6,13 @@ var createScene = function () {
 
     // Create the scene space
     var scene = new BABYLON.Scene(engine);
+    scene.clearColor = BABYLON.Color3.Gray();
 
     // Add a camera to the scene and attach it to the canvas
-    var camera = new BABYLON.ArcRotateCamera("Camera", Math.PI / 2, Math.PI / 2, 2, new BABYLON.Vector3(0, 0, 5), scene);
+    var camera = new BABYLON.ArcRotateCamera("Camera", -Math.PI / 2, 3 * (Math.PI / 4), 2, BABYLON.Vector3.Zero(), scene);
+    camera.setPosition(new BABYLON.Vector3(-5, 5, 0));
+    camera.lowerBetaLimit = 0.1;
+    camera.upperBetaLimit = (Math.PI / 2) * 0.95;
     camera.attachControl(canvas, true);
 
     // Add lights to the scene
@@ -47,7 +51,7 @@ var createScene = function () {
 
     // This shows how we would apply this material to a plane. In our later
     // example we'll replace this with CreateGroundFromHeightMap.
-    var groundPlane = BABYLON.MeshBuilder.CreatePlane("groundPlane", 200.0, scene);
+    var groundPlane = BABYLON.MeshBuilder.CreatePlane("groundPlane", { height: 20, width: 20, sideOrientation: BABYLON.Mesh.DOUBLESIDE }, scene);
 
     // When our new mesh is read, apply our material.
     groundPlane.material = groundMaterial;
