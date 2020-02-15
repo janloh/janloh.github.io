@@ -16,7 +16,7 @@ var createScene = function () {
     var light2 = new BABYLON.PointLight("light2", new BABYLON.Vector3(0, 1, -1), scene);
 
     // The first parameter can be used to specify which mesh to import. Here we import all meshes
-    BABYLON.SceneLoader.ImportMesh("", "./assets/models", "Delta.obj", scene, function (newMeshes) {
+    BABYLON.SceneLoader.ImportMesh("", "./assets/models/", "Delta.obj", scene, function (newMeshes) {
         // Set the target of the camera to the first imported mesh
         camera.target = newMeshes[0];
     });
