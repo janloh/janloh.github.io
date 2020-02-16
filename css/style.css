@@ -3,7 +3,35 @@
 }
 
 body, html {
-    height: 100%
+    height: 100%;
+}
+
+.container {
+    position: relative;
+}
+
+.color-white {
+    color: white;
+}
+
+.padding {
+    padding: 1rem 2rem;
+}
+
+.font-size {
+    font-size: 1.8em;
+}
+
+.top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .background {

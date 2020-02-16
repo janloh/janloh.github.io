@@ -29,7 +29,7 @@ var createScene = function () {
     shadowGenerator.blurKernel = 32;
 
     // The first parameter can be used to specify which mesh to import. Here we import all meshes
-    BABYLON.SceneLoader.ImportMesh("", "./assets/models/", "Delta.obj", scene, function (newMeshes) {
+    var deltaObj = BABYLON.SceneLoader.ImportMesh("", "./assets/models/", "Delta.obj", scene, function (newMeshes) {
         // Set the target of the camera to the first imported mesh
         camera.target = newMeshes[0];
 
@@ -49,12 +49,8 @@ var createScene = function () {
     var groundMaterial = new BABYLON.StandardMaterial("ground", scene);
     groundMaterial.diffuseTexture = new BABYLON.Texture("./assets/textures/ground.jpg", scene);
 
-    // This shows how we would apply this material to a plane. In our later
-    // example we'll replace this with CreateGroundFromHeightMap.
-    var groundPlane = BABYLON.MeshBuilder.CreatePlane("groundPlane", { height: 20, width: 20, sideOrientation: BABYLON.Mesh.DOUBLESIDE }, scene);
-
     // When our new mesh is read, apply our material.
-    groundPlane.material = groundMaterial;
+    deltaObj.material = groundMaterial;
 
     return scene;
 };
