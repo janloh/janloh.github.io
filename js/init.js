@@ -9,13 +9,13 @@ var createScene = function () {
     scene.clearColor = BABYLON.Color3.Gray();
 
     // Add a camera to the scene and attach it to the canvas
-    var camera = new BABYLON.ArcRotateCamera("Camera", -Math.PI / 2, 3 * (Math.PI / 4), 10, BABYLON.Vector3.Zero(), scene);
+    var camera = new BABYLON.ArcRotateCamera("Camera", -Math.PI / 2, 3 * (Math.PI / 4), 15, BABYLON.Vector3.Zero(), scene);
     camera.setPosition(new BABYLON.Vector3(-5, 5, 0));
     camera.lowerBetaLimit = 0.1;
     camera.upperBetaLimit = (Math.PI / 2) * 0.95;
     camera.attachControl(canvas, true);
-    camera.lowerRadiusLimit = 5;
-    camera.upperRadiusLimit = 15;
+    camera.lowerRadiusLimit = 15;
+    camera.upperRadiusLimit = 50;
 
     // Add lights to the scene
     var light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0, 1, 0), scene);
@@ -46,13 +46,21 @@ var createScene = function () {
         helper.setMainColor(BABYLON.Color3.Gray());
         helper.ground.position.y += 0.01;
     });
+
+    var deltaMaterial = new BABYLON.StandardMaterial("deltaMat", scene);
+    deltaMaterial.diffuseColor = new BABYLON.Color3(1, 0, 1);
+    deltaMaterial.specularColor = new BABYLON.Color3(0, 1, 0);
+    deltaMaterial.emissiveColor = new BABYLON.Color3(1, 1, 0);
+    deltaMaterial.ambientColor = new BABYLON.Color3(0, 1, 1);
+
+    deltaObj.material = deltaMaterial;
     
     // Create a material with our land texture.
-    var groundMaterial = new BABYLON.StandardMaterial("ground", scene);
-    groundMaterial.diffuseTexture = new BABYLON.Texture("./assets/textures/ground.jpg", scene);
+    //var groundMaterial = new BABYLON.StandardMaterial("ground", scene);
+    //groundMaterial.diffuseTexture = new BABYLON.Texture("./assets/textures/ground.jpg", scene);
 
-    // When our new mesh is read, apply our material.
-    deltaObj.material = groundMaterial;
+    //// When our new mesh is read, apply our material.
+    //deltaObj.material = groundMaterial;
 
     return scene;
 };
