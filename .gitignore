@@ -22,6 +22,8 @@ ExportedObj/
 
 # Builds
 
+# Use protected html file on github
+index_plain.html
 
 
 .vs/
