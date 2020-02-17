@@ -48,8 +48,8 @@ var createScene = function () {
 
         var deltaMaterial = new BABYLON.StandardMaterial("deltaMat", scene);
         deltaMaterial.diffuseTexture = new BABYLON.Texture("./assets/textures/chrome.jpg", scene);
-        deltaMaterial.diffuseColor = new BABYLON.Color3(1, 0, 0);
-        deltaMaterial.specularColor = new BABYLON.Color3(0, 1, 0);
+        deltaMaterial.diffuseColor = new BABYLON.Color3(0, 0, 0);
+        deltaMaterial.specularColor = new BABYLON.Color3(1, 0, 0);
 
         newMeshes[0].material = deltaMaterial;
     });
