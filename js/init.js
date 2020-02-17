@@ -45,15 +45,15 @@ var createScene = function () {
         });
         helper.setMainColor(BABYLON.Color3.Gray());
         helper.ground.position.y += 0.01;
+        var deltaMaterial = new BABYLON.StandardMaterial("deltaMat", scene);
+        deltaMaterial.diffuseColor = new BABYLON.Color3(1, 0, 1);
+        deltaMaterial.specularColor = new BABYLON.Color3(0, 1, 0);
+        deltaMaterial.emissiveColor = new BABYLON.Color3(1, 1, 0);
+        deltaMaterial.ambientColor = new BABYLON.Color3(0, 1, 1);
+
+        newMeshes[0].material = deltaMaterial;
     });
 
-    var deltaMaterial = new BABYLON.StandardMaterial("deltaMat", scene);
-    deltaMaterial.diffuseColor = new BABYLON.Color3(1, 0, 1);
-    deltaMaterial.specularColor = new BABYLON.Color3(0, 1, 0);
-    deltaMaterial.emissiveColor = new BABYLON.Color3(1, 1, 0);
-    deltaMaterial.ambientColor = new BABYLON.Color3(0, 1, 1);
-
-    deltaObj.material = deltaMaterial;
     
     // Create a material with our land texture.
     //var groundMaterial = new BABYLON.StandardMaterial("ground", scene);
