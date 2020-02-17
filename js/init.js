@@ -1,7 +1,6 @@
-var canvas = document.getElementById("renderCanvas"); // Get the canvas element 
-var engine = new BABYLON.Engine(canvas, true); // Generate the BABYLON 3D engine
+var canvas = document.getElementById("renderCanvas");
+var engine = new BABYLON.Engine(canvas, true);
 
-/******* Add the create scene function ******/
 var createScene = function () {
 
     // Create the scene space
@@ -19,8 +18,9 @@ var createScene = function () {
 
     // Add lights to the scene
     var light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0, 1, 0), scene);
-    light.intensity = 0.6;
+    light.diffuse = BABYLON.Color3.White();
     light.specular = BABYLON.Color3.Black();
+    light.intensity = 0.6;
 
     var light2 = new BABYLON.DirectionalLight("dir01", new BABYLON.Vector3(0, -0.5, -1.0), scene);
     light2.position = new BABYLON.Vector3(0, 5, 5);
@@ -45,22 +45,14 @@ var createScene = function () {
         });
         helper.setMainColor(BABYLON.Color3.Gray());
         helper.ground.position.y += 0.01;
+
         var deltaMaterial = new BABYLON.StandardMaterial("deltaMat", scene);
-        deltaMaterial.diffuseColor = new BABYLON.Color3(1, 0, 1);
+        deltaMaterial.diffuseTexture = new BABYLON.Texture("./assets/textures/chrome.jpg", scene);
+        deltaMaterial.diffuseColor = new BABYLON.Color3(1, 0, 0);
         deltaMaterial.specularColor = new BABYLON.Color3(0, 1, 0);
-        deltaMaterial.emissiveColor = new BABYLON.Color3(1, 1, 0);
-        deltaMaterial.ambientColor = new BABYLON.Color3(0, 1, 1);
 
         newMeshes[0].material = deltaMaterial;
     });
-
-    
-    // Create a material with our land texture.
-    //var groundMaterial = new BABYLON.StandardMaterial("ground", scene);
-    //groundMaterial.diffuseTexture = new BABYLON.Texture("./assets/textures/ground.jpg", scene);
-
-    //// When our new mesh is read, apply our material.
-    //deltaObj.material = groundMaterial;
 
     return scene;
 };
