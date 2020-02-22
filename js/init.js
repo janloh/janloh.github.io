@@ -43,7 +43,7 @@ var createScene = function () {
         var helper = scene.createDefaultEnvironment({
             enableGroundShadow: true
         });
-        helper.setMainColor(BABYLON.Color3.Gray());
+        helper.setMainColor(new BABYLON.Color3(249/255, 69/255, 58/255);
         helper.ground.position.y += 0.01;
 
         var deltaMaterial = new BABYLON.StandardMaterial("deltaMat", scene);
