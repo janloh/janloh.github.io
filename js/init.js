@@ -31,7 +31,6 @@ var createScene = function () {
     shadowGenerator.blurKernel = 32;
 
     // The first parameter can be used to specify which mesh to import. Here we import all meshes
-    let mesh;
     BABYLON.SceneLoader.ImportMesh("", "./assets/models/", "Delta.obj", scene, function (newMeshes) {
         mesh = newMeshes[0];
         // Set the target of the camera to the first imported mesh
@@ -50,15 +49,11 @@ var createScene = function () {
 
         var deltaMaterial = new BABYLON.StandardMaterial("deltaMat", scene);
         deltaMaterial.diffuseTexture = new BABYLON.Texture("./assets/textures/chrome.jpg", scene);
-        deltaMaterial.diffuseColor = new BABYLON.Color3(0, 0, 0);
-        deltaMaterial.specularColor = new BABYLON.Color3(1, 0, 0);
+        deltaMaterial.diffuseColor = new BABYLON.Color3(73/255, 226/255, 187/255);
+        deltaMaterial.specularColor = new BABYLON.Color3(249/255, 69/255, 58/255);
 
         newMeshes[0].material = deltaMaterial;
     });
-    console.log(mesh);
-    // scene.beforeRender((mesh) => {
-       // mesh.rotation.y += 0.01;
-    // });
 
     return scene;
 };
