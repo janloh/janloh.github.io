@@ -55,10 +55,10 @@ var createScene = function () {
 
         newMeshes[0].material = deltaMaterial;
     });
-
-    scene.beforeRender((mesh) => {
-        mesh.rotation.y += 0.01;
-    });
+    console.log(mesh);
+    // scene.beforeRender((mesh) => {
+       // mesh.rotation.y += 0.01;
+    // });
 
     return scene;
 };
