@@ -44,13 +44,13 @@ var createScene = function () {
         var helper = scene.createDefaultEnvironment({
             enableGroundShadow: true
         });
-        helper.setMainColor(new BABYLON.Color3(249/255, 69/255, 58/255));
+        helper.setMainColor(new BABYLON.Color3(46/255, 46/255, 48/255));
         helper.ground.position.y += 0.01;
 
         var deltaMaterial = new BABYLON.StandardMaterial("deltaMat", scene);
         deltaMaterial.diffuseTexture = new BABYLON.Texture("./assets/textures/chrome.jpg", scene);
-        deltaMaterial.diffuseColor = new BABYLON.Color3(73/255, 226/255, 187/255);
-        deltaMaterial.specularColor = new BABYLON.Color3(249/255, 69/255, 58/255);
+        deltaMaterial.diffuseColor = new BABYLON.Color3(249/255, 69/255, 58/255);
+        deltaMaterial.specularColor = new BABYLON.Color3(73/255, 226/255, 187/255);
 
         newMeshes[0].material = deltaMaterial;
     });
