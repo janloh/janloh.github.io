@@ -31,7 +31,7 @@ var createScene = function () {
     shadowGenerator.blurKernel = 32;
 
     // The first parameter can be used to specify which mesh to import. Here we import all meshes
-    var deltaObj = BABYLON.SceneLoader.ImportMesh("", "./assets/models/Jahnke_dj8_1x48/", "191108_dj8_1x48.obj", scene, function (newMeshes) {
+    var deltaObj = BABYLON.SceneLoader.ImportMesh("", "./assets/models/nachtsicht/", "200325_dj8_1x48.obj", scene, function (newMeshes) {
         mesh = newMeshes[0];
         // Set the target of the camera to the first imported mesh
         camera.target = newMeshes[0];
