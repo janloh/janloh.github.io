@@ -13,7 +13,7 @@ var createScene = function () {
     camera.lowerBetaLimit = 0.1;
     camera.upperBetaLimit = (Math.PI / 2) * 0.95;
     camera.attachControl(canvas, true);
-    camera.lowerRadiusLimit = 15;
+    camera.lowerRadiusLimit = 5;
     camera.upperRadiusLimit = 50;
 
     // Add lights to the scene
