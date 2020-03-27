@@ -78,12 +78,14 @@ async function importMesh(root, url, name) {
 }
 
 //Call the createScene function
-const scene = delayCreateScene();
+const scene = delayCreateScene().then(engine.runRenderLoop(function () {
+    scene.render();
+}););
 
 // Register a render loop to repeatedly render the scene
-engine.runRenderLoop(function () {
-    scene.render();
-});
+//engine.runRenderLoop(function () {
+//    scene.render();
+//});
 
 // Watch for browser/canvas resize events
 window.addEventListener("resize", function () {
