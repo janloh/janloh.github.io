@@ -1,9 +1,7 @@
 const canvas = document.getElementById("renderCanvas");
 const engine = new BABYLON.Engine(canvas, true);
 
-// create scene async
-const delayCreateScene = async () => {
-
+const createScene = () => {
     // Create the scene space
     const scene = new BABYLON.Scene(engine);
     scene.clearColor = BABYLON.Color3.Gray();
@@ -36,8 +34,8 @@ const delayCreateScene = async () => {
     // Create parent node -> bounding box
     const nightVisionParent = new BABYLON.Mesh.CreateBox("nightVisionParent", 1, scene);
 
-    // async mesh import
-    await importMesh(nightVisionParent, "./assets/models/nachtsicht/", "200325_dj8_1x48.obj")
+    // mesh import
+    importMesh(nightVisionParent, "./assets/models/nachtsicht/", "200325_dj8_1x48.obj")
 
     camera.target = nightVisionParent;
     shadowGenerator.addShadowCaster(nightVisionParent, true);
@@ -69,23 +67,22 @@ const delayCreateScene = async () => {
     //newMeshes[0].material = deltaMaterial;
 //});
 
-async function importMesh(root, url, name) {
-    const objs = await BABYLON.SceneLoader.ImportMeshAsync("", url, name, BABYLON.EngineStore.LastCreatedScene, null);
-    const meshRoots = objs.meshes.filter(m => m.parent == null);
-    if (meshRoots.length == 0) console.log("Imported object does not have a root!");
-    else if (meshRoots.length > 1) console.log("Multiple roots detected!");
-    meshRoots.forEach(m => m.parent = root);
+const importMesh = (root, url, name) => {
+    const objs = BABYLON.SceneLoader.ImportMesh("", url, name, BABYLON.EngineStore.LastCreatedScene, newMeshes => {
+        const meshRoots = newMeshes.filter(m => m.parent == null);
+        if (meshRoots.length == 0) console.log("Imported object does not have a root!");
+        else if (meshRoots.length > 1) console.log("Multiple roots detected!");
+        newMeshes.forEach(m => m.parent = root);
+    });
 }
 
 //Call the createScene function
-const scene = delayCreateScene().then(engine.runRenderLoop(function () {
-    scene.render();
-}););
+const scene = createScene();
 
 // Register a render loop to repeatedly render the scene
-//engine.runRenderLoop(function () {
-//    scene.render();
-//});
+engine.runRenderLoop(function () {
+    scene.render();
+});
 
 // Watch for browser/canvas resize events
 window.addEventListener("resize", function () {
