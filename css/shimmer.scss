@@ -1,0 +1,19 @@
+.shimmer {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(to right, $dark, $white, $dark);
+  background-size: 50% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation-name: shimmer;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-color: $dark;
+}
+
+@keyframes shimmer {
+  0% {background-position: top left;}
+  100% {background-position: top right;}
+}

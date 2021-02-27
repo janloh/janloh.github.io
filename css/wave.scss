@@ -1,0 +1,37 @@
+$totalWaves: 10;
+
+.wave-container {
+  width: 110vw;
+  height: 30vh;
+  overflow: hidden;
+  position: relative;
+  margin: 10vh 0 10vh -5vw;
+  .wave {
+    width: 100%;
+    position: absolute;
+    @keyframes wave {
+      to { transform: translateX(300vw);}
+    }
+    .wave-inner {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      background: radial-gradient(#ffffff, rgba(255, 255, 255, 0.5), #3dd6eb 70%);
+      animation: wave-upDown 1.5s alternate infinite ease-in-out;
+    }
+  }
+  @for $i from 1 through $totalWaves {
+    $time: random(20);
+    .wave:nth-child(#{$i}) {
+      animation: wave ($time/$totalWaves * $i + 1)+s infinite linear;
+      animation-delay: ($time/$totalWaves * $i / 10)+s;
+      .wave-inner {
+        animation: wave-upDown#{$i} 1.5s alternate infinite ease-in-out;
+      }
+    }
+    @keyframes wave-upDown#{$i} {
+      $offset: random(20)+vh;
+      to { transform: translateY(calc(#{$offset} + 10vh - 5rem));}
+    }
+  }
+}
