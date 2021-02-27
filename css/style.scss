@@ -1,0 +1,490 @@
+// variables
+$white: #ffffff;
+$dark: #222222;
+$lightblue: #3dd6eb;
+$teal: #14a4b8;
+$yellow: #ebaf31;
+$orange: #eb7c26;
+$blue: #001d52;
+$green: #49eb49;
+$pink: #eb2689;
+$violet: #7a199e;
+$lightgrey: #eeeeee;
+$white-transparent: rgba(255, 255, 255, 0.75);
+$grunge-fill: $dark;
+$grunge-stroke: $dark;
+$font-real-big: clamp(32px, 6vw, 128px);
+$font-big: clamp(24px, 4vw, 96px);
+$font-normal: clamp(16px, 3vw, 64px);
+$font-small: clamp(16px, 1.2vw, 32px);
+$font-weight-normal: 300;
+$font-weight-bold: 800;
+
+// colors
+.color-white {
+  color: $white;
+}
+
+.color-dark {
+  color: $dark;
+}
+
+.color-lightblue {
+  color: $lightblue;
+}
+
+.color-teal {
+  color: $teal;
+}
+
+.color-yellow {
+  color: $yellow;
+}
+
+.color-orange {
+  color: $orange;
+}
+
+.color-blue {
+  color: $blue;
+}
+
+.color-green {
+  color: $green;
+}
+
+.color-pink {
+  color: $pink;
+}
+
+.color-violet {
+  color: $violet;
+}
+
+.color-lightgrey {
+  color: $lightgrey;
+}
+
+.background-white {
+  background-color: $white;
+}
+
+.background-dark {
+  background-color: $dark;
+}
+
+.background-lightblue {
+  background-color: $lightblue;
+}
+
+.background-teal {
+  background-color: $teal;
+}
+
+.background-yellow {
+  background-color: $yellow;
+}
+
+.background-orange {
+  background-color: $orange;
+}
+
+.background-blue {
+  background-color: $blue;
+}
+
+.background-green {
+  background-color: $green;
+}
+
+.background-pink {
+  background-color: $pink;
+}
+
+.background-violet {
+  background-color: $violet;
+}
+
+.background-lightgrey {
+  background-color: $lightgrey;
+}
+
+// basic
+::after, ::before {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: none;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: $font-normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-weight-bold;
+}
+
+p, span {
+  font-weight: $font-weight-normal;
+  line-height: 1.03;
+}
+
+.container {
+  position: relative;
+}
+
+// shapes
+.arrow-down::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 250px;
+  height: 50px;
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+  transform: translateX(-50%);
+  background-color: white;
+  z-index: 5;
+}
+
+.angle-top-right-10 {
+  clip-path: polygon(0 0, 100% calc(0% + 10vw), 100% 100%, 0 100%);
+  margin-top: -10vw;
+}
+.angle-top-left-10 {
+  clip-path: polygon(0 calc(0% + 10vw), 100% 0, 100% 100%, 0 100%);
+  margin-top: -10vw;
+}
+
+.angle-bottom-right-10 {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+  margin-bottom: -10vw;
+}
+.angle-bottom-left-10 {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10vw));
+  margin-bottom: -10vw;
+}
+
+.angle-header-left {
+  clip-path: polygon(0 0, 100% calc(0% + 30vw), 100% 100%, 0 100%);
+}
+.angle-header-right {
+  clip-path: polygon(100% calc(0% + 40vh), 100% 100%, calc(100% - 80vh) 100%);
+}
+
+// sizes
+.view-h-100 {
+  height: 100vh;
+}
+
+.view-h-110 {
+  height: 110vh;
+}
+
+.view-h-plus-angle {
+  height: calc(100vh + 10vw);
+}
+
+.view-h-50 {
+  height: 50vh;
+}
+
+.view-w-100 {
+  width: 100vw;
+}
+
+.view-w-80 {
+  width: 80vw;
+}
+
+.percent-w-100 {
+  width: 100%;
+}
+
+// positions
+.absolute-0 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+// withered
+.withered {
+  position: relative;
+  width: fit-content;
+  .withered-text {
+    text-transform: uppercase;
+    font-size: $font-real-big;
+    font-weight: $font-weight-bold;
+    line-height: .75;
+    margin: 0.1rem 0;
+    &.enjoy {
+      color: $lightblue;
+    }
+  }
+  .withered-text-overlay {
+    background: url(grunge.svg);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// shimmer
+.shimmer {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(to right, $dark, $white, $dark);
+  background-size: 50% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation-name: shimmer;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-color: $dark;
+}
+
+@keyframes shimmer {
+  0% {background-position: top left;}
+  100% {background-position: top right;}
+}
+
+// glitch
+.glitch-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .glitch {
+    color: $dark;
+    text-transform: uppercase;
+    position: relative;
+    width: 100vw;
+    text-align: center;
+
+    &::before, &::after{
+      color: $dark;
+      content: attr(data-content);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: $lightgrey;
+      overflow: hidden;
+      top: 0;
+    }
+
+    &::before {
+      left: 3px;
+      text-shadow: -2px 0 #333;
+      animation-name: glitch-animation-1;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+    }
+        
+    &::after {
+      left: -3px;
+      text-shadow: -2px 0 #111;
+      animation-name: glitch-animation-2;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+    }
+  }   
+}
+
+@keyframes glitch-animation-1 {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} { 
+      clip: rect(random(150)+px, 100vw, random(150)+px, 0);
+    }
+  }
+}
+@keyframes glitch-animation-2 {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} { 
+      clip: rect(random(150)+px, 100vw, random(150)+px, 0);
+    }
+  }
+}
+
+
+// home
+.standard {
+  position: relative;
+  .header-container {
+    position: relative;
+    margin-bottom: -10vh;
+    header {
+      margin: 0;
+      h1 {
+        font-size: $font-real-big;
+        padding-left: 2rem;
+        margin-top: 20vh;
+        margin-bottom: 0;
+        margin-left: 5%;
+      }
+    }
+  }
+
+  .content-container {
+    clip-path: polygon(0 0, calc(0% + 35vw) 0, calc(0% + 50vw) calc(0% + 5vw), calc(100% - 35vw) 0, 100% 0, 100% 100%, 0 100%);
+    .content {
+      height: 100%;
+      margin: 0 5%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      padding: 1rem;
+      > div {
+        padding: 1rem;
+      }
+      .column-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .text-container {
+          width: 100%;
+          max-width: 75%;
+          font-size: $font-normal;
+        }
+      }
+      .column-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+      }
+    }
+  }
+
+  .bottom-container {
+    height: 100%;
+    margin: 0 5%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.copyright-container {
+  padding: 1rem 2rem;
+  .copyright {
+    font-size: $font-small;
+    mix-blend-mode: exclusion;
+    margin-bottom: 2rem;
+  }
+}
+
+.secrets {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $lightgrey;
+  z-index: -1;
+  transition: z-index 1s ease-out;
+  &.layer-1 {
+    z-index: 7;
+  }
+  &.layer-2 {
+    z-index: 8;
+  }
+  .secret-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+  }
+  .secret-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .column-stretch-2 {
+      grid-column: span 2;
+    }
+  }
+}
+
+// wave
+$totalWaves: 10;
+
+.wave-container {
+  width: 110vw;
+  height: 30vh;
+  overflow: hidden;
+  position: relative;
+  margin: 10vh 0 10vh -5vw;
+  .wave {
+    width: 100%;
+    position: absolute;
+    @keyframes wave {
+      to { transform: translateX(300vw);}
+    }
+    .wave-inner {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      background: radial-gradient(#ffffff, rgba(255, 255, 255, 0.5), #3dd6eb 70%);
+      animation: wave-upDown 1.5s alternate infinite ease-in-out;
+    }
+  }
+  @for $i from 1 through $totalWaves {
+    $time: random(20);
+    .wave:nth-child(#{$i}) {
+      animation: wave ($time/$totalWaves * $i + 1)+s infinite linear;
+      animation-delay: ($time/$totalWaves * $i / 10)+s;
+      .wave-inner {
+        animation: wave-upDown#{$i} 1.5s alternate infinite ease-in-out;
+      }
+    }
+    @keyframes wave-upDown#{$i} {
+      $offset: random(20)+vh;
+      to { transform: translateY(calc(#{$offset} + 10vh - 5rem));}
+    }
+  }
+}

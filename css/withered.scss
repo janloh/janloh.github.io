@@ -1,0 +1,23 @@
+.withered {
+  position: relative;
+  width: fit-content;
+  .withered-text {
+    text-transform: uppercase;
+    font-size: $font-real-big;
+    font-weight: $font-weight-bold;
+    line-height: .75;
+    margin: 0.1rem 0;
+    &.enjoy {
+      color: $lightblue;
+    }
+  }
+  .withered-text-overlay {
+    background: url(grunge.svg);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
