@@ -2,49 +2,21 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Babylon Test Page</title>
-    <script src="https://cdn.babylonjs.com/babylon.js"></script>
-    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
-    <script src="https://cdn.babylonjs.com/viewer/babylon.viewer.js"></script>
-    <script src="https://code.jquery.com/pep/0.4.3/pep.min.js"></script>
+    <title>Deep Sea</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,800">
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style.min.css" />
 </head>
 <body>
-    <div class="container background color-white">
-        <div class="top-left padding font-size">
-            Babylon Delta Test
-        </div>
-        <div class="canvas-container">
-            <!--<babylon id="viewer-example" extends="none" touch-action="none">
-                <templates>
-                    <main location="#main-template">
-                        <params no-escape="true" babylon-font="https://viewer.babylonjs.com/babylon.woff"></params>
-                    </main>
-                </templates>
-                <model url="./assets/models/Delta.obj">
-                    <scaling x="2" y="2" z="2"></scaling>
-                </model>
-                <ground receive-shadows="true"></ground>
-                <skybox></skybox>
-                <engine antialiasing="true"></engine>
-                <camera>
-                    <behaviours>
-                        <auto-rotate type="0"></auto-rotate>
-                        <framing type="2" zoom-on-bounding-info="true" zoom-stops-animation="false"></framing>
-                        <bouncing type="1"></bouncing>
-                    </behaviours>
-                </camera>
-                <lights>
-                    <light1 type="1" shadow-enabled="true"></light1>
-                </lights>
-            </babylon>-->
-            <canvas id="renderCanvas" touch-action="none"></canvas>
-        </div>
-        <div class="bottom-left color-white padding">
-            &copy; suma-j
+    <div class="frosted-container">
+        <div class="frosted">
+            <h4>Flowfield Aquarium</h4>
+            <canvas id="flowfield" touch-action="none"></canvas>
         </div>
     </div>
-    <script src="../js/babylonTestModel.js"></script>
+    <div class="bottom-right color-white copyright-container">
+        <p class="copyright">&copy; 2021 Jan Lohmann</p>
+    </div>
+    <script src="../js/openSimplexNoise.js"></script>
+    <script src="../js/flowfield.js"></script>
 </body>
 </html>

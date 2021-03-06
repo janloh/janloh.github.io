@@ -23,7 +23,8 @@ ExportedObj/
 # Builds
 
 # Use protected html file on github
-index_plain.html
+joy-plain.html
+dimensions-plain.html
 
 
 .vs/

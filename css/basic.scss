@@ -29,3 +29,17 @@ p, span {
 .container {
   position: relative;
 }
+
+.format-16-9 {
+  position: relative;
+  padding-bottom: 56.25%;
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.half-opaque {
+  opacity: 0.5;
+}
