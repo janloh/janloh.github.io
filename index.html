@@ -74,19 +74,100 @@
         </div>
         <div class="view-h-100 background-lightgrey angle-top-left-10">
             <div class="bottom-container">
-                <p class="shimmer">Shimmer text</p>
-                <button type="button" class="emergency-button"></button>
+                <p class="shimmer">Choose wisely</p>
+                <div class="counter">
+                    <p><span id="counter-wisely"></span><span> people have chosen wisely</span></p>
+                    <p><span id="counter-poorly"></span> people have chosen poorly</p>
+                </div>
+                <div class="choices">
+                    <button type="button" class="emergency-button" onclick="initiateEmergency()"></button>
+                    <button type="button" class="super-awesome-button" onclick="initiateAwesomness()"></button>
+                </div>
             </div>
         </div>
     </div>
-    <div class="secrets">
-        <div class="secret-1">
+    <div id="secret-1" class="secrets secret-1">
+        <div class="eaten">
+            <div class="pacman">
+                <div class="pacman-eye"></div>
+                <div class="pacman-mouth"></div>
+            </div>
+        </div>
+        <div class="eaten">
+            <div class="pacman">
+                <div class="pacman-eye"></div>
+                <div class="pacman-mouth"></div>
+            </div>
+        </div>
+        <div class="eaten">
+            <div class="pacman">
+                <div class="pacman-eye"></div>
+                <div class="pacman-mouth"></div>
+            </div>
+        </div>
+        <div class="eaten">
+            <div class="pacman">
+                <div class="pacman-eye"></div>
+                <div class="pacman-mouth"></div>
+            </div>
+        </div>
+        <div class="eaten">
+            <div class="pacman">
+                <div class="pacman-eye"></div>
+                <div class="pacman-mouth"></div>
+            </div>
+        </div>
+        <div class="eaten">
+            <div class="pacman">
+                <div class="pacman-eye"></div>
+                <div class="pacman-mouth"></div>
+            </div>
+        </div>
+        <div class="eaten">
+            <div class="pacman">
+                <div class="pacman-eye"></div>
+                <div class="pacman-mouth"></div>
+            </div>
+        </div>
+        <div class="eaten">
+            <div class="pacman">
+                <div class="pacman-eye"></div>
+                <div class="pacman-mouth"></div>
+            </div>
+        </div>
+        <div class="eaten">
+            <div class="pacman">
+                <div class="pacman-eye"></div>
+                <div class="pacman-mouth"></div>
+            </div>
+        </div>
+        <div class="eaten">
+            <div class="pacman">
+                <div class="pacman-eye"></div>
+                <div class="pacman-mouth"></div>
+            </div>
         </div>
     </div>
-    <div class="secrets">
+    <div id="secret-2" class="secrets">
         <div class="secret-2">
             <div class="glitch-wrapper column-stretch-2">
                 <h1 class="glitch" data-content="What did you do???">What did you do???</h1>
+            </div>
+            <div class="drag">
+                <div>
+                    <div id="drag-section-1" class="background-lightblue" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+                <div>
+                    <div id="drag-section-2" class="background-dark" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+                <div>
+                    <div id="drag-section-3" class="background-lightgrey" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+            </div>
+            <div id="dropzone" class="drop">
+                <div class="bordered" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="bordered" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="bordered" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
             </div>
         </div>
     </div>

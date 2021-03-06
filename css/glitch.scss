@@ -5,26 +5,26 @@
   align-items: center;
 
   .glitch {
-    color: $dark;
+    color: $matrix-green;
     text-transform: uppercase;
     position: relative;
     width: 100vw;
     text-align: center;
 
     &::before, &::after{
-      color: $dark;
+      color: $matrix-green;
       content: attr(data-content);
       position: absolute;
       width: 100%;
       height: 100%;
-      background: $lightgrey;
+      background: $matrix-dark;
       overflow: hidden;
       top: 0;
     }
 
     &::before {
       left: 3px;
-      text-shadow: -2px 0 #333;
+      text-shadow: -2px 0 $matrix-lightgreen;
       animation-name: glitch-animation-1;
       animation-duration: 2s;
       animation-timing-function: linear;
@@ -35,7 +35,7 @@
         
     &::after {
       left: -3px;
-      text-shadow: -2px 0 #111;
+      text-shadow: -2px 0 $matrix-darkgreen;
       animation-name: glitch-animation-2;
       animation-duration: 2s;
       animation-timing-function: linear;
