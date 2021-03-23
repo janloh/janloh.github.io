@@ -271,132 +271,132 @@ p, span {
 }
 @keyframes glitch-animation-1 {
     0% {
-        clip: rect(63px, 100vw, 35px, 0);
+        clip: rect(46px, 100vw, 39px, 0);
    }
     5% {
-        clip: rect(50px, 100vw, 97px, 0);
+        clip: rect(143px, 100vw, 24px, 0);
    }
     10% {
-        clip: rect(25px, 100vw, 35px, 0);
+        clip: rect(52px, 100vw, 13px, 0);
    }
     15% {
-        clip: rect(128px, 100vw, 120px, 0);
+        clip: rect(103px, 100vw, 74px, 0);
    }
     20% {
-        clip: rect(99px, 100vw, 107px, 0);
+        clip: rect(39px, 100vw, 131px, 0);
    }
     25% {
-        clip: rect(71px, 100vw, 34px, 0);
+        clip: rect(79px, 100vw, 118px, 0);
    }
     30% {
-        clip: rect(60px, 100vw, 29px, 0);
+        clip: rect(138px, 100vw, 92px, 0);
    }
     35% {
-        clip: rect(109px, 100vw, 13px, 0);
+        clip: rect(90px, 100vw, 79px, 0);
    }
     40% {
-        clip: rect(87px, 100vw, 103px, 0);
+        clip: rect(88px, 100vw, 124px, 0);
    }
     45% {
-        clip: rect(92px, 100vw, 64px, 0);
+        clip: rect(118px, 100vw, 29px, 0);
    }
     50% {
-        clip: rect(93px, 100vw, 63px, 0);
+        clip: rect(44px, 100vw, 58px, 0);
    }
     55% {
-        clip: rect(110px, 100vw, 76px, 0);
+        clip: rect(120px, 100vw, 24px, 0);
    }
     60% {
-        clip: rect(53px, 100vw, 11px, 0);
+        clip: rect(79px, 100vw, 39px, 0);
    }
     65% {
-        clip: rect(115px, 100vw, 57px, 0);
+        clip: rect(30px, 100vw, 147px, 0);
    }
     70% {
-        clip: rect(58px, 100vw, 41px, 0);
+        clip: rect(103px, 100vw, 74px, 0);
    }
     75% {
-        clip: rect(49px, 100vw, 143px, 0);
+        clip: rect(39px, 100vw, 81px, 0);
    }
     80% {
-        clip: rect(19px, 100vw, 101px, 0);
+        clip: rect(28px, 100vw, 41px, 0);
    }
     85% {
-        clip: rect(150px, 100vw, 33px, 0);
+        clip: rect(138px, 100vw, 30px, 0);
    }
     90% {
-        clip: rect(110px, 100vw, 116px, 0);
+        clip: rect(8px, 100vw, 27px, 0);
    }
     95% {
-        clip: rect(72px, 100vw, 11px, 0);
+        clip: rect(2px, 100vw, 56px, 0);
    }
     100% {
-        clip: rect(137px, 100vw, 22px, 0);
+        clip: rect(129px, 100vw, 53px, 0);
    }
 }
 @keyframes glitch-animation-2 {
     0% {
-        clip: rect(123px, 100vw, 16px, 0);
+        clip: rect(19px, 100vw, 8px, 0);
    }
     5% {
-        clip: rect(6px, 100vw, 26px, 0);
+        clip: rect(101px, 100vw, 6px, 0);
    }
     10% {
-        clip: rect(75px, 100vw, 57px, 0);
+        clip: rect(30px, 100vw, 61px, 0);
    }
     15% {
-        clip: rect(22px, 100vw, 86px, 0);
+        clip: rect(124px, 100vw, 50px, 0);
    }
     20% {
-        clip: rect(5px, 100vw, 118px, 0);
+        clip: rect(18px, 100vw, 131px, 0);
    }
     25% {
-        clip: rect(92px, 100vw, 15px, 0);
+        clip: rect(105px, 100vw, 39px, 0);
    }
     30% {
-        clip: rect(120px, 100vw, 33px, 0);
+        clip: rect(45px, 100vw, 126px, 0);
    }
     35% {
-        clip: rect(110px, 100vw, 107px, 0);
+        clip: rect(35px, 100vw, 109px, 0);
    }
     40% {
-        clip: rect(107px, 100vw, 21px, 0);
+        clip: rect(74px, 100vw, 62px, 0);
    }
     45% {
-        clip: rect(125px, 100vw, 145px, 0);
+        clip: rect(22px, 100vw, 48px, 0);
    }
     50% {
-        clip: rect(138px, 100vw, 57px, 0);
+        clip: rect(102px, 100vw, 45px, 0);
    }
     55% {
-        clip: rect(72px, 100vw, 35px, 0);
+        clip: rect(64px, 100vw, 1px, 0);
    }
     60% {
-        clip: rect(29px, 100vw, 3px, 0);
+        clip: rect(140px, 100vw, 113px, 0);
    }
     65% {
-        clip: rect(11px, 100vw, 119px, 0);
+        clip: rect(116px, 100vw, 26px, 0);
    }
     70% {
-        clip: rect(134px, 100vw, 115px, 0);
+        clip: rect(110px, 100vw, 117px, 0);
    }
     75% {
-        clip: rect(119px, 100vw, 59px, 0);
+        clip: rect(58px, 100vw, 117px, 0);
    }
     80% {
-        clip: rect(94px, 100vw, 97px, 0);
+        clip: rect(63px, 100vw, 112px, 0);
    }
     85% {
-        clip: rect(103px, 100vw, 44px, 0);
+        clip: rect(129px, 100vw, 141px, 0);
    }
     90% {
-        clip: rect(79px, 100vw, 126px, 0);
+        clip: rect(126px, 100vw, 58px, 0);
    }
     95% {
-        clip: rect(31px, 100vw, 36px, 0);
+        clip: rect(110px, 100vw, 32px, 0);
    }
     100% {
-        clip: rect(94px, 100vw, 8px, 0);
+        clip: rect(12px, 100vw, 18px, 0);
    }
 }
 .standard {
@@ -458,6 +458,9 @@ p, span {
     width: 100%;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
+}
+.standard .bottom-container .counter p {
+    justify-self: center;
 }
 .standard .choices {
     display: flex;
@@ -759,123 +762,123 @@ p, span {
     animation: wave-upDown 1.5s alternate infinite ease-in-out;
 }
 .wave-container .wave:nth-child(1) {
-    animation: wave 2.5s infinite linear;
-    animation-delay: 0.15s;
+    animation: wave 1.9s infinite linear;
+    animation-delay: 0.09s;
 }
 .wave-container .wave:nth-child(1) .wave-inner {
     animation: wave-upDown1 1.5s alternate infinite ease-in-out;
 }
 @keyframes wave-upDown1 {
     to {
-        transform: translateY(calc(3vh + 10vh - 5rem));
+        transform: translateY(calc(18vh + 10vh - 5rem));
    }
 }
 .wave-container .wave:nth-child(2) {
-    animation: wave 4.2s infinite linear;
-    animation-delay: 0.32s;
+    animation: wave 1.4s infinite linear;
+    animation-delay: 0.04s;
 }
 .wave-container .wave:nth-child(2) .wave-inner {
     animation: wave-upDown2 1.5s alternate infinite ease-in-out;
 }
 @keyframes wave-upDown2 {
     to {
-        transform: translateY(calc(17vh + 10vh - 5rem));
+        transform: translateY(calc(10vh + 10vh - 5rem));
    }
 }
 .wave-container .wave:nth-child(3) {
-    animation: wave 3.1s infinite linear;
-    animation-delay: 0.21s;
+    animation: wave 6.7s infinite linear;
+    animation-delay: 0.57s;
 }
 .wave-container .wave:nth-child(3) .wave-inner {
     animation: wave-upDown3 1.5s alternate infinite ease-in-out;
 }
 @keyframes wave-upDown3 {
     to {
-        transform: translateY(calc(14vh + 10vh - 5rem));
+        transform: translateY(calc(10vh + 10vh - 5rem));
    }
 }
 .wave-container .wave:nth-child(4) {
-    animation: wave 6.2s infinite linear;
-    animation-delay: 0.52s;
+    animation: wave 3.4s infinite linear;
+    animation-delay: 0.24s;
 }
 .wave-container .wave:nth-child(4) .wave-inner {
     animation: wave-upDown4 1.5s alternate infinite ease-in-out;
 }
 @keyframes wave-upDown4 {
     to {
-        transform: translateY(calc(5vh + 10vh - 5rem));
+        transform: translateY(calc(4vh + 10vh - 5rem));
    }
 }
 .wave-container .wave:nth-child(5) {
-    animation: wave 3s infinite linear;
-    animation-delay: 0.2s;
+    animation: wave 7s infinite linear;
+    animation-delay: 0.6s;
 }
 .wave-container .wave:nth-child(5) .wave-inner {
     animation: wave-upDown5 1.5s alternate infinite ease-in-out;
 }
 @keyframes wave-upDown5 {
     to {
-        transform: translateY(calc(15vh + 10vh - 5rem));
+        transform: translateY(calc(14vh + 10vh - 5rem));
    }
 }
 .wave-container .wave:nth-child(6) {
-    animation: wave 3.4s infinite linear;
-    animation-delay: 0.24s;
+    animation: wave 1.6s infinite linear;
+    animation-delay: 0.06s;
 }
 .wave-container .wave:nth-child(6) .wave-inner {
     animation: wave-upDown6 1.5s alternate infinite ease-in-out;
 }
 @keyframes wave-upDown6 {
     to {
-        transform: translateY(calc(5vh + 10vh - 5rem));
+        transform: translateY(calc(7vh + 10vh - 5rem));
    }
 }
 .wave-container .wave:nth-child(7) {
-    animation: wave 15s infinite linear;
-    animation-delay: 1.4s;
+    animation: wave 5.9s infinite linear;
+    animation-delay: 0.49s;
 }
 .wave-container .wave:nth-child(7) .wave-inner {
     animation: wave-upDown7 1.5s alternate infinite ease-in-out;
 }
 @keyframes wave-upDown7 {
     to {
-        transform: translateY(calc(15vh + 10vh - 5rem));
+        transform: translateY(calc(1vh + 10vh - 5rem));
    }
 }
 .wave-container .wave:nth-child(8) {
-    animation: wave 16.2s infinite linear;
-    animation-delay: 1.52s;
+    animation: wave 13s infinite linear;
+    animation-delay: 1.2s;
 }
 .wave-container .wave:nth-child(8) .wave-inner {
     animation: wave-upDown8 1.5s alternate infinite ease-in-out;
 }
 @keyframes wave-upDown8 {
     to {
-        transform: translateY(calc(10vh + 10vh - 5rem));
+        transform: translateY(calc(17vh + 10vh - 5rem));
    }
 }
 .wave-container .wave:nth-child(9) {
-    animation: wave 8.2s infinite linear;
-    animation-delay: 0.72s;
+    animation: wave 17.2s infinite linear;
+    animation-delay: 1.62s;
 }
 .wave-container .wave:nth-child(9) .wave-inner {
     animation: wave-upDown9 1.5s alternate infinite ease-in-out;
 }
 @keyframes wave-upDown9 {
     to {
-        transform: translateY(calc(12vh + 10vh - 5rem));
+        transform: translateY(calc(5vh + 10vh - 5rem));
    }
 }
 .wave-container .wave:nth-child(10) {
-    animation: wave 20s infinite linear;
-    animation-delay: 1.9s;
+    animation: wave 5s infinite linear;
+    animation-delay: 0.4s;
 }
 .wave-container .wave:nth-child(10) .wave-inner {
     animation: wave-upDown10 1.5s alternate infinite ease-in-out;
 }
 @keyframes wave-upDown10 {
     to {
-        transform: translateY(calc(1vh + 10vh - 5rem));
+        transform: translateY(calc(18vh + 10vh - 5rem));
    }
 }
 .frosted-container {
@@ -931,6 +934,14 @@ p, span {
     background-color: rgba(142, 177, 191, 0.2);
     filter: blur(10px);
     margin: -20px;
+}
+.aquarium {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    text-align: center;
+    margin: 2rem 0;
+    font-size: clamp(3rem, 3vw, 5rem);
+    line-height: 1;
 }
 canvas {
     width: 100%;

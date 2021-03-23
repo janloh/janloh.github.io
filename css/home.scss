@@ -57,6 +57,9 @@
       width: 100%;
       grid-template-columns: 1fr 1fr;
       grid-gap: 2rem;
+      p {
+        justify-self: center;
+      }
     }
   }
   
