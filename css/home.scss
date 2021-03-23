@@ -135,18 +135,18 @@
     pointer-events: none;
     .pacman {
       position: absolute;
-      top: -2vh;
-      width: 10vw;
-      height: 10vw;
+      top: calc(-1 * max(1vw,1vh));
+      width: calc(max(12vw, 12vh));
+      height: calc(max(12vw, 12vh));
       background-color: $pacman;
       border-radius: 50%;
       z-index: 9;
       .pacman-eye {
         position: absolute;
-        top: 2vw;
-        left: 5vw;
-        width: 1vw;
-        height: 1vw;
+        top: calc(max(2vw, 2vh));
+        left: calc(max(4vw, 4vh));
+        width: calc(max(1vw, 1vh));
+        height: calc(max(1vw, 1vh));
         border-radius: 50%;
         background-color: $dark;
       }
@@ -175,122 +175,122 @@
      }
     .eaten {
       position: absolute;
-      width: 110vw;
-      height: 10vh;
+      width: calc(100vw + max(10vw, 10vh));
+      height: calc(max(10vw, 10vh));
       background-color: $lightgrey;
       &:nth-child(1) {
         top: 0;
-        left: -10vw;
+        left: calc(-1 * max(10vw, 10vh));
         &.active {
           animation: pacman-background 2s linear forwards;
         }
         .pacman {
-          left: -5vw;
+          left: calc(-1 * max(5vw, 5vh));
           transform: scaleX(-1);
         }
       }
       &:nth-child(2) {
-        top: 10vh;
+        top: calc(max(10vh, 10vw));
         left: 0;
         &.active {
           animation: pacman-background-reverse 2s linear forwards;
         }
         .pacman {
-          left: 105vw;
+          left: calc(100vw + max(5vw, 5vh));
         }
       }
       &:nth-child(3) {
-        top: 20vh;
-        left: -10vw;
+        top: calc(max(20vh, 20vw));
+        left: calc(-1 * max(10vw, 10vh));
         &.active {
           animation: pacman-background 2s linear forwards;
         }
         .pacman {
-          left: -5vw;
+          left: calc(-1 * max(5vw, 5vh));
           transform: scaleX(-1);
         }
       }
       &:nth-child(4) {
-        top: 30vh;
+        top: calc(max(30vh, 30vw));
         left: 0;
         &.active {
           animation: pacman-background-reverse 2s linear forwards;
         }
         .pacman {
-          left: 105vw;
+          left: calc(100vw + max(5vw, 5vh));
         }
       }
       &:nth-child(5) {
-        top: 40vh;
-        left: -10vw;
+        top: calc(max(40vh, 40vw));
+        left: calc(-1 * max(10vw, 10vh));
         &.active {
           animation: pacman-background 2s linear forwards;
         }
         .pacman {
-          left: -5vw;
+          left: calc(-1 * max(5vw, 5vh));
           transform: scaleX(-1);
         }
       }
       &:nth-child(6) {
-        top: 50vh;
+        top: calc(max(50vh, 50vw));
         left: 0;
         &.active {
           animation: pacman-background-reverse 2s linear forwards;
         }
         .pacman {
-          left: 105vw;
+          left: calc(100vw + max(5vw, 5vh));
         }
       }
       &:nth-child(7) {
-        top: 60vh;
-        left: -10vw;
+        top: calc(max(60vh, 60vw));
+        left: calc(-1 * max(10vw, 10vh));
         &.active {
           animation: pacman-background 2s linear forwards;
         }
         .pacman {
-          left: -5vw;
+          left: calc(-1 * max(5vw, 5vh));
           transform: scaleX(-1);
         }
       }
       &:nth-child(8) {
-        top: 70vh;
+        top: calc(max(70vh, 70vw));
         left: 0;
         &.active {
           animation: pacman-background-reverse 2s linear forwards;
         }
         .pacman {
-          left: 105vw;
+          left: calc(100vw + max(5vw, 5vh));
         }
       }
       &:nth-child(9) {
-        top: 80vh;
-        left: -10vw;
+        top: calc(max(80vh, 80vw));
+        left: calc(-1 * max(10vw, 10vh));
         &.active {
           animation: pacman-background 2s linear forwards;
         }
         .pacman {
-          left: -5vw;
+          left: calc(-1 * max(5vw, 5vh));
           transform: scaleX(-1);
         }
       }
       &:nth-child(10) {
-        top: 90vh;
+        top: calc(max(90vh, 90vw));
         left: 0;
         &.active {
           animation: pacman-background-reverse 2s linear forwards;
         }
         .pacman {
-          left: 105vw;
+          left: calc(100vw + max(5vw, 5vh));
         }
       }
     }
     @keyframes pacman-background {
-      0% {left: -10vw;}
-      100% {left: 110vw;}
+      0% {left: calc(-1 * max(10vw, 10vh));}
+      100% {left: calc(100vw + max(10vw, 10vh));}
     }
     @keyframes pacman-background-reverse {
       0% {left: 0;}
-      100% {left: -120vw;}
+      100% {left: calc(-1 * (100vw + max(20vw, 20vh)));}
     }
   }
   .secret-2 {
