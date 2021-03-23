@@ -434,6 +434,9 @@ p, span {
       width: 100%;
       grid-template-columns: 1fr 1fr;
       grid-gap: 2rem;
+      p {
+        justify-self: center;
+      }
     }
   }
   
@@ -791,6 +794,14 @@ $totalWaves: 10;
 }
 
 // deep
+.aquarium {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffffff;
+  text-align: center;
+  margin: 2rem 0;
+  font-size: clamp(3rem, 3vw, 5rem);;
+  line-height: 1;
+}
 canvas {
   width: 100%;
   height: 100%;
